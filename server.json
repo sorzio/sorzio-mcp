@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.sorzio/sorzio",
+  "title": "Sorzio",
+  "description": "B2B web & LinkedIn enrichment, email verification, ICP scoring & AI copy for up to 25,000 leads.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.sorzio.com",
+  "repository": {
+    "url": "https://github.com/sorzio/sorzio-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.sorzio.com/api/mcp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "variables": [],
+  "steps": [
+    {
+      "id": "verify",
+      "kind": "verify",
+      "label": "Verify email",
+      "provider": "no2bounce",
+      "inputToken": "email",
+      "outputToken": "email_status"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "variables": [{ "key": "icp", "label": "Your ICP qualifiers", "type": "text", "required": true }],
+  "steps": [
+    {
+      "id": "site",
+      "kind": "scrape",
+      "label": "Read website",
+      "provider": "replylabs-scrape",
+      "inputToken": "website",
+      "outputToken": "site_text"
+    },
+    {
+      "id": "icp_reason",
+      "kind": "ai",
+      "label": "ICP verdict and reasons",
+      "model": "openai/gpt-4o-mini",
+      "systemPrompt": "You qualify companies against an ideal customer profile (ICP). Use only the facts in the text given. Start your answer with exactly one of GO, AMBER or NO GO, then a colon, then at most two sentences naming the qualifiers the company meets or misses. GO: meets every must-have qualifier. AMBER: meets most, or a must-have cannot be checked from the text. NO GO: misses a must-have qualifier. When the website text is empty or starts with #ERROR, answer AMBER: website could not be read.",
+      "prompt": "Our ICP:\n{{var.icp}}\n\nCompany: {{company}}\n\nWebsite text:\n{{site_text}}",
+      "outputToken": "icp_reason"
+    },
+    {
+      "id": "icp_filter",
+      "kind": "filter",
+      "label": "ICP fit",
+      "outputToken": "icp_verdict",
+      "predicate": {
+        "type": "ai",
+        "model": "openai/gpt-4o-mini",
+        "question": "Qualification note:\n{{icp_reason}}\n\nWhich verdict does the note start with?",
+        "output": { "kind": "enum", "values": ["GO", "AMBER", "NO_GO"] },
+        "keep": ["GO", "AMBER"]
+      }
+    }
+  ]
+}

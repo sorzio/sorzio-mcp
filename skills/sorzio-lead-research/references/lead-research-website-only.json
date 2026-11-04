@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "variables": [],
+  "steps": [
+    {
+      "id": "site",
+      "kind": "scrape",
+      "label": "Read website",
+      "provider": "replylabs-scrape",
+      "inputToken": "website",
+      "outputToken": "site_text"
+    },
+    {
+      "id": "firmographics",
+      "kind": "ai",
+      "label": "Firmographics",
+      "model": "openai/gpt-4o-mini",
+      "systemPrompt": "You extract facts about a company from its website. Use only the text given. When a fact is not in the text, write unknown. Never guess.",
+      "prompt": "Website text:\n{{site_text}}\n\nAnswer in exactly four lines:\nIndustry: ...\nEmployees: ...\nHeadquarters: ...\nWhat they sell: ...",
+      "outputToken": "firmographics"
+    },
+    {
+      "id": "buyer_phrase",
+      "kind": "ai",
+      "label": "Buyer phrase",
+      "model": "openai/gpt-4o-mini",
+      "systemPrompt": "You find the words a company uses for the customers it sells to. Follow the company's own wording. Use only the text given.",
+      "prompt": "Website text:\n{{site_text}}\n\nIn at most eight words, who does this company say it sells to? If the text does not say, answer: unknown",
+      "outputToken": "buyer_phrase"
+    }
+  ]
+}

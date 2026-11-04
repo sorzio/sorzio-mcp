@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "variables": [],
+  "steps": [
+    {
+      "id": "verify",
+      "kind": "verify",
+      "label": "Verify email",
+      "provider": "no2bounce",
+      "inputToken": "email",
+      "outputToken": "email_status"
+    },
+    {
+      "id": "email_gate",
+      "kind": "gate",
+      "label": "Sendable emails",
+      "gateType": "verdict",
+      "disposition": { "rejected": "move", "tabName": "Not deliverable" },
+      "verdict": { "verifyStepId": "verify", "keepVerdicts": ["deliverable", "catch_all"] }
+    }
+  ]
+}

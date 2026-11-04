@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "variables": [],
+  "steps": [
+    {
+      "id": "site",
+      "kind": "scrape",
+      "label": "Read website",
+      "provider": "replylabs-scrape",
+      "inputToken": "website",
+      "outputToken": "site_text"
+    },
+    {
+      "id": "opener",
+      "kind": "ai",
+      "label": "Write opener",
+      "model": "openai/gpt-4o-mini",
+      "systemPrompt": "You write the first line of a cold email. One sentence, specific to this company, using only facts found in the website text. No flattery, no questions. If the website text is empty or starts with #ERROR, answer exactly: NO DATA",
+      "prompt": "Company: {{company}}\n\nWebsite text:\n{{site_text}}\n\nWrite the first line.",
+      "outputToken": "opener"
+    }
+  ]
+}

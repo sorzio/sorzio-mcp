@@ -1,0 +1,27 @@
+{
+  "name": "sorzio",
+  "displayName": "Sorzio",
+  "version": "1.0.0",
+  "description": "You hold the ICP and expertise; Claude writes and tests the prompts on a few rows; Sorzio runs them at volume across up to 25,000 leads (bulk website and LinkedIn scraping, mailbox verification, ICP scoring and outbound copy in lists or Google Sheets).",
+  "author": {
+    "name": "Sorzio",
+    "email": "hello@sorzio.com",
+    "url": "https://www.sorzio.com"
+  },
+  "homepage": "https://www.sorzio.com",
+  "license": "MIT",
+  "keywords": [
+    "sorzio",
+    "lead-enrichment",
+    "icp-qualification",
+    "icp-scoring",
+    "bulk-csv-enrichment",
+    "email-verification",
+    "web-scraping",
+    "lead-research",
+    "outbound-sales",
+    "cold-email",
+    "google-sheets",
+    "clay-alternative"
+  ]
+}
