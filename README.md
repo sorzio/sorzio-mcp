@@ -22,9 +22,12 @@
     <a href="https://www.sorzio.com/claude"><strong>Claude Guide</strong></a> ·
     <a href="https://workspace.google.com/marketplace/app/sorzio_ai_email_verifier_scraper_for_she/860378915175"><strong>Google Sheets Add-On</strong></a> ·
     <a href="https://www.sorzio.com/tools/cold-email-cost-calculator"><strong>Cost Calculator</strong></a> ·
-    <a href="https://www.sorzio.com/llms-full.txt"><strong>llms-full.txt</strong></a>
+    <a href="https://www.sorzio.com/llms-full.txt"><strong>llms-full.txt</strong></a> ·
+    <a href="https://glama.ai/mcp/servers/sorzio/sorzio-mcp"><strong>Glama</strong></a>
   </p>
 </div>
+
+[![sorzio/sorzio-mcp MCP server](https://glama.ai/mcp/servers/sorzio/sorzio-mcp/badges/score.svg)](https://glama.ai/mcp/servers/sorzio/sorzio-mcp)
 
 ---
 
