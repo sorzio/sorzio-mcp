@@ -1,0 +1,28 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "sorzio",
+  "displayName": "Sorzio",
+  "version": "1.0.0",
+  "description": "B2B lead enrichment, email verification, web scraping, AI cell enrichment, and multi-step Flows across Sorzio Lists and connected Google Sheets.",
+  "author": {
+    "name": "Empra Consultancy LTD",
+    "url": "https://www.sorzio.com"
+  },
+  "homepage": "https://www.sorzio.com",
+  "repository": "https://github.com/sorzio/sorzio-mcp",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "b2b",
+    "lead-enrichment",
+    "email-verification",
+    "web-scraping",
+    "google-sheets",
+    "mcp"
+  ],
+  "suggestedPrompts": [
+    "List my Sorzio lists and available AI models",
+    "Estimate verifying 500 emails on my Sorzio list before running",
+    "Run a 3-row test of a verify plus AI enrichment Flow on a Sorzio list"
+  ]
+}

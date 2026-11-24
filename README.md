@@ -20,7 +20,7 @@
     <a href="https://www.sorzio.com"><strong>Website</strong></a> ·
     <a href="https://www.sorzio.com/mcp"><strong>MCP Hub</strong></a> ·
     <a href="https://www.sorzio.com/claude"><strong>Claude Guide</strong></a> ·
-    <a href="https://workspace.google.com/marketplace/app/replylabs_ai_verify_scrape_for_sheets/860378915175"><strong>Google Sheets Add-On</strong></a> ·
+    <a href="https://workspace.google.com/marketplace/app/sorzio_ai_email_verifier_scraper_for_she/860378915175"><strong>Google Sheets Add-On</strong></a> ·
     <a href="https://www.sorzio.com/tools/cold-email-cost-calculator"><strong>Cost Calculator</strong></a> ·
     <a href="https://www.sorzio.com/llms-full.txt"><strong>llms-full.txt</strong></a>
   </p>
@@ -86,7 +86,7 @@ Open **Settings -> Connectors -> Create** and enter `https://www.sorzio.com/api/
 ```
 
 ### 5. Google Sheets Native Add-On
-Install **Sorzio: AI, Email Verifier &amp; Scraper for Sheets** from the [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/replylabs_ai_verify_scrape_for_sheets/860378915175). Any sheet opened with the add-on is automatically accessible from Claude and ChatGPT via `list_sheets`, `read_sheet`, `run_flow`, and `create_schedule`.
+Install **Sorzio: AI, Email Verifier &amp; Scraper for Sheets** from the [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/sorzio_ai_email_verifier_scraper_for_she/860378915175). Any sheet opened with the add-on is automatically accessible from Claude and ChatGPT via `list_sheets`, `read_sheet`, `run_flow`, and `create_schedule`.
 
 ---
 

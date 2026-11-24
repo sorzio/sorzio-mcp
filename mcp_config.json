@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "sorzio": {
+      "serverUrl": "https://www.sorzio.com/api/mcp"
+    }
+  }
+}
